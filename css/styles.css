@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#0a0d12;
+    color:#e6e6e6;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0f141b;
+    border-bottom:1px solid #1c2430;
+    position:relative;
+    z-index:10;
+    transition:0.3s;
+}
+
+header.scrolled{
+    background:#0b1016;
+    box-shadow:0 5px 20px rgba(0,0,0,0.6);
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-container img{
+    height:45px;
+}
+
+header h1{
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#c5a75d;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#aaa;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c5a75d;
+}
+
+.discord-button{
+    margin-left:30px;
+    background:#5865F2;
+    padding:8px 18px;
+    border-radius:6px;
+    color:white !important;
+    text-decoration:none;
+    font-size:14px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.discord-button:hover{
+    background:#4752c4;
+    transform:translateY(-2px);
+}
+
+.hero{
+    position:relative;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.hero video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+.hero-content{
+    z-index:2;
+    padding:20px 40px;
+    backdrop-filter: blur(3px);
+    border-radius:10px;
+}
+
+.hero h2{
+    font-family:'Rajdhani', sans-serif;
+    font-size:48px;
+    letter-spacing:4px;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.hero p{
+    font-size:18px;
+    color:#fff;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-family:'Rajdhani', sans-serif;
+    font-size:28px;
+    margin-bottom:40px;
+    color:#c5a75d;
+    letter-spacing:2px;
+}
+
+.about p{
+    max-width:850px;
+    line-height:1.7;
+    color:#aaa;
+}
+
+.command{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.command-text{
+    flex:1;
+    min-width:300px;
+}
+
+.command-text h3{
+    font-family:'Rajdhani', sans-serif;
+    font-size:22px;
+    letter-spacing:2px;
+    color:#c5a75d;
+    margin-bottom:15px;
+}
+
+.command-text p{
+    color:#aaa;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.command-image{
+    flex:1;
+    min-width:280px;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.command-image img{
+    width:320px;
+    border-radius:8px;
+    border:1px solid #1c2430;
+    transition:0.4s;
+}
+
+.command-image img:hover{
+    transform:scale(1.03);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:6px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer{
+    background:#0f141b;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #1c2430;
+    font-size:13px;
+    color:#666;
+}
