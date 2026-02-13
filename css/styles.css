@@ -223,3 +223,33 @@ footer{
     font-size:13px;
     color:#666;
 }
+
+
+.apply-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:400px;
+}
+
+.apply-form input{
+    padding:12px;
+    background:#11161f;
+    border:1px solid #1c2430;
+    color:#fff;
+    border-radius:4px;
+}
+
+.apply-form button{
+    padding:12px;
+    background:#c5a75d;
+    border:none;
+    color:#000;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.apply-form button:hover{
+    background:#a88c45;
+}
